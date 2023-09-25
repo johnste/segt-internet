@@ -2,7 +2,15 @@
 Laddar
 
 <script>
+  let n = 0;
+  const i = setInterval(() => {
+    
+    document.write('Laddar' + ".".repeat(n%4));
+    }, 500);
+  });
+  
   setTimeout(() => {
+    clearInterval(i);
   document.write('Det är nog bara du');
     }, 20000);
 </script>
